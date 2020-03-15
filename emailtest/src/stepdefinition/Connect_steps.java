@@ -39,7 +39,7 @@ public void user_is_on_home_page() throws Throwable {
 public void clicks_on_connect_page() throws Throwable {
 
 	WebElement abc=driver.findElement(By.xpath("//a[.='Connect']"));
-	
+	Thread.sleep(2000);
 	utility.Wait.explicit(driver, 2, abc);
 	
 	abc.click();
